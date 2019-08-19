@@ -1,1 +1,8 @@
 # BlogBackEnd
+djongo==1.2.33
+httpie==1.0.2
+idna==2.8
+passlib==1.7.1
+Pillow==6.1.0
+Pygments==2.4.2
+pymongo==3.8.0
