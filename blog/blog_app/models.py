@@ -2,8 +2,8 @@ from django.db import models
 
 # Create your models here.
 
-class Posst(models.Model):
-    title=models.CharField(max_length=50)
+class Post(models.Model):
+    title=models.CharField(max_length=500)
     author=models.CharField(max_length=30)
     date=models.DateField()
     time=models.TimeField()

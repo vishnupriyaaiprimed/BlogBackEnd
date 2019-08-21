@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Posst
+from .models import Post
 from django.contrib.auth.models import User
 from .serializers import PostSerializer,UserSerializer
 from rest_framework import viewsets
@@ -12,5 +12,5 @@ class UserViewSetByUsername(viewsets.ModelViewSet):
     lookup_field='username'
 
 class PostViewSet(viewsets.ModelViewSet):
-    queryset=Posst.objects.all().order_by('-date','-time')
+    queryset=Post.objects.all().order_by('-date','-time')
     serializer_class=PostSerializer

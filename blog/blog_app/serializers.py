@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Posst
+from .models import Post
 from django.contrib.auth.models import User
 
 class UserSerializer(serializers.ModelSerializer):
@@ -15,5 +15,5 @@ class UserSerializer(serializers.ModelSerializer):
 
 class PostSerializer(serializers.ModelSerializer):
     class Meta:
-        model=Posst
+        model=Post
         fields="__all__"
